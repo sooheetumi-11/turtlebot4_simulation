@@ -1,4 +1,4 @@
-# TurtleBot 4 Autonomous Simulation (ROS 2 Humble & Gazebo Fortress)
+# TurtleBot 4 Autonomous Simulation
 
 Dự án cung cấp gói mô phỏng toàn diện cho robot **TurtleBot 4** (nền tảng di động iRobot® Create® 3 kết hợp tháp cảm biến TurtleBot 4, RPLiDAR A1 và camera OAK-D-PRO) hoạt động trên nền **ROS 2 Humble** và trình mô phỏng **Gazebo Fortress (Ignition Gazebo 6)**. 
 
