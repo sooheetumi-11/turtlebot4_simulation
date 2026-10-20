@@ -91,16 +91,10 @@ sudo apt install -y git python3-colcon-common-extensions python3-yaml \
 
 ### Bước 3.1: Tạo thư mục workspace và tải mã nguồn
 
-Nếu bạn đang tạo mới workspace từ đầu:
-
 ```bash
 # Tạo thư mục workspace
 mkdir -p ~/workspaces/turtlebot4_ws/src
 cd ~/workspaces/turtlebot4_ws/src
-
-# Clone repository về thư mục src
-git clone https://github.com/TNSang25/Turtlebot4.git .
-```
 
 ### Bước 3.2: Build toàn bộ workspace
 
@@ -120,10 +114,6 @@ rosdep install --from-paths src --ignore-src -r -y
 colcon build --symlink-install
 ```
 
-> **Lưu ý:** Cờ `--symlink-install` giúp các file script Python, launch và config được tạo liên kết mềm, khi chỉnh sửa không cần phải biên dịch lại.
-
----
-
 ## 4. Hướng dẫn chạy chi tiết
 
 ### Chuẩn bị môi trường Terminal
@@ -138,7 +128,7 @@ source install/setup.bash
 export ROS_DOMAIN_ID=69
 ```
 
-> 💡 **Mẹo:** Bạn có thể thêm các dòng lệnh trên vào cuối file `~/.bashrc` để mọi terminal mới mở đều tự động nhận diện workspace:
+> Thêm các dòng lệnh trên vào cuối file `~/.bashrc` để mọi terminal mới mở đều tự động nhận diện workspace:
 > ```bash
 > echo "source /opt/ros/humble/setup.bash" >> ~/.bashrc
 > echo "source ~/workspaces/turtlebot4_ws/install/setup.bash" >> ~/.bashrc
